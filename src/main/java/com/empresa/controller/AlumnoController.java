@@ -27,6 +27,7 @@ public class AlumnoController {
 		return "crudAlumno";
 	}
 	
+	
 	@RequestMapping("/consultaCrudAlumno")
 	public String consulta(String filtro, HttpSession session) {
 		List<Alumno> data = service.buscaPorNombre(filtro +"%");
